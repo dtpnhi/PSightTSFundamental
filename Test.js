@@ -1,24 +1,11 @@
-var Shapes;
+var demo;
 
-(function (Shapes) {
+(function(demo) {
     
-    var Point = (function () {
+    var squareItSimple = function(h, w) {
         
-        // Contructor
-        function Point(x, y) {
-            this.x = x;
-            this.y = y;
-        }
+        return h * w;
         
-        // Instance member
-        Point.prototype.getDist = function () {
-            return Math.sqrt(this.x * this.x + this.y * this.y);
-        }
-        
-        return Point;
-        
-    }());
+    }
     
-    Shapes.Point = Point;
-    
-}(Shapes || (Shapes = {})));
+}(demo || (demo = {})));
